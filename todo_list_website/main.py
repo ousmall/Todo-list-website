@@ -85,7 +85,7 @@ def delete_all():
     return redirect(url_for('show_list'))
 
 
-@app.route("/contact", methods=["POST"])
+@app.route("/contact")
 def contact():
     if request.method == "POST":
         firstname = request.form['firstname'],
